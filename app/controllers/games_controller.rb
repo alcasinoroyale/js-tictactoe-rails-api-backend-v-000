@@ -16,5 +16,6 @@ class GamesController < ApplicationController
 
   def index
     @game = Game.all
+    render json: @games
   end
 end
